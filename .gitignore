@@ -1,0 +1,11 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs/*
+/.vs/DotNet5CoreWebApp
+/DotNet5CoreWebApp/obj
+/DotNet5CoreWebApp/bin/Debug/net5.0
+/DotNet5CoreWebApp/wwwroot
+/AuthenticationWebPOC/obj
+/AuthenticationWebPOC/bin/Debug/net5.0

@@ -1,0 +1,17 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+    var className = (User.Identity.IsAuthenticated) ? "display-4" : "text-danger alert-info";
+}
+
+<div class="text-center">
+    @{ if (User.Identity.IsAuthenticated)
+        {
+            <h4 class="@className"><b>Welcome:</b> @User.Identity.Name</h4>
+        }
+        else
+        {
+            <h4 class="@className">Please <a href="/login">sign-in here</a>, if you need to view Secured data!</h4>
+        }
+    }
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div>
